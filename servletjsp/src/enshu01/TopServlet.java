@@ -10,17 +10,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet(name = "HellowServ" , urlPatterns = {"/hello"})
-public class TopServlet extends HttpServet 
+@WebServlet(name = "name01_1" ,urlPatterns = {"/url01_1"})
+public class TopServlet extends HttpServlet
 {
-	private static final long serialVersionUID = 1L;
-	
 	@Override
-	protected void doGet(HttpServletRequest request, jakarta.servlet.http.HttpServletResponse response)
-			throws ServletException,IOException
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
+			throws ServletException, IOException
 	{
-		
-		response.setContentType("");
+		PrintWriter pw = response.getWriter();
+		pw.println("<html>");
+		pw.println("<body>");
+		pw.println("<h1>Hello Servlet</h1>");
+		pw.println("</body>");
+		pw.println("</html>");
 	}
-	
 }
