@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet(name = "name01_1" ,urlPatterns = {"/url01_1"})
+@WebServlet(name = "name01_1" ,urlPatterns = {"/servletjsp/url01_1"})
 public class TopServlet extends HttpServlet
 {
 	@Override
