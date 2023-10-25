@@ -25,7 +25,7 @@ public class LoginServlet extends HttpServlet
 		outPrint.println("<body>");
 		outPrint.println("<h1>ログイン画面</h1>");
 		
-		outPrint.println("<form method='post' action='servletjsp/url03_2'>");
+		outPrint.println("<form method='post' action='url03_2'>");
 		outPrint.println("<input type= 'submit' value='送信'>");
 		outPrint.println("</form>");
 		
